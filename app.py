@@ -58,7 +58,7 @@ if st.button('شروع پیشبینی'):
     prob = prediction.item()
     st.write(f"live chance: **{prob *100:.2f}%**")
     if prob < 0.5:
-    st.error("💀 Unfortunately, this passenger did not survive.")
+    st.write("💀 Unfortunately, this passenger did not survive.")
     st.snow()
     st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Titanic_underwater.jpg/800px-Titanic_underwater.jpg", caption="Rest in peace 🕊️")
     else:
