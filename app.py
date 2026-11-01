@@ -58,6 +58,8 @@ if st.button('شروع پیشبینی'):
     prob = prediction.item()
     st.write(f"live chance: **{prob *100:.2f}%**")
     if prob < 0.5:
-        st.write("your opponent is dead")
+        st.write("Unfurtunately, you did not Survived!")
+        st.balloons()
     else:
-        st.write("this time you are so clucky \n 'you are survived'")
+        st.write("this time you are so lucky ! 'you survived'")
+        st.snow()
